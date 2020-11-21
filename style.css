@@ -1,0 +1,22 @@
+.top-margin {
+    margin-top: 40px;
+}
+
+#petCard {
+    display: inline-block;
+}
+
+#map {
+    height: 500px;
+  }
+
+.footer {
+    padding: 20px;
+    background-color:#f0ebeb;
+}
+
+#submit {
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 9px;
+}
