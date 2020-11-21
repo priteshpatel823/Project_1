@@ -1,0 +1,17 @@
+.navbar {
+    background: beige;
+    text-align: left;
+}
+
+.navbar-item {
+    text-align: right;
+}
+
+.column {
+    background: beige;
+}
+
+.title {
+    font-style: italic; 
+}
+
