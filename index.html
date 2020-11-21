@@ -1,5 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Find my pet friend!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+<!--- Nav bar --->
+ <nav class="navbar">
+ <div class="container">
+     <div class="navbar-brand">
+        <a class="navbar-item" href="#" style="font-weight:bold;">
+            Find my Pet Friend!
+        </a>
+            <span class="navbar-burger" data-target="navMenu">
+                <span></span>
+                <span></span>
+            </span>
+       </div>
+       <div id="navMenu" class="navBar-menu">
+           <div class="navbar-end">
+               <a href="#" class="navbar-item">Home</a>
+               <a href="#" class="navbar-item">Adoption</a>
+               <a href="#" class="navbar-item">Photos</a>
+           </div>
+       </div>
+ </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+      <h1 class="title">Home Page!</h1>
+      <h2 class="subtitle">
+        A central app to help you adopt your new <strong>furry friend!</strong> To get started, scroll down to find photos of cute dogs and cats to ispire your adoption. Then click on the adoption page to find your pet a forever home.
+      </h2>
+    </div>
+  </section>
+
+<!--- Form for Adoption Page --->
+  <div class="columns top-margin">
+    <div class="column">
+
+    </div>
+    <div class="column">
+        <div class="field">
+            <label class="label">Zip Code</label>
+            <div class="control is-expanded">
+                <input id="zipCode" class="input" type="text" placeholder="">
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">Distance (miles)</label>
+            <div class="control">
+                <div id="distance" class="select">
+                    <select>
+                        <option selected value="5">5</option>
+                        <option value="10">10</option>
+                        <option value="20">20</option>
+                        <option value="50">50</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="field">
+            <label class="label">Species</label>
+            <div class="control">
+                <div id="species" class="select">
+                    <select>
+                        <option selected value="cat">Cat</option>
+                        <option value="dog">Dog</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="field is-grouped is-grouped-centered">
+            <div class="control">
+                <button id="submit" class="button is-link">Submit</button>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+
+    </div>
+</div>
+
+<div class="container">
+    <div class="columns">
+        <div class="column">
+
+        </div>
+        <div class="column">
+
+        </div>
+        <div class="column">
+
+        </div>
+        <div class="column">
+
+        </div>
+    </div>
+</div>
+
+<div id="pet-results" class="container">
+</div>
+
+ <!--- Testimonial --->
+
+  <div class="tile is-ancestor">
+    <div class="tile is-4 is-vertical is-parent">
+      <div class="tile is-child box">
+        <p class="title">Testimonial One:</p>
+        <p> The best adoption page ever! I found my furry friend in minutes. Someone please give these developers a job in software development!</p>
+      </div>
+      <div class="tile is-child box">
+        <p class="title">Testimonial Two:</p>
+        <p>This application is the bomb dot com. In minutes, I was able to see photos of dogs and cats and then immedietly be taken to a adoption page. Bravo, developers!</p>
+      </div>
+    </div>
+    <div class="tile is-parent">
+      <div class="tile is-child box">
+        <p class="title">Testimonial Three:</p>
+        <p>Find my pet friend is super awesome. I highly reccomend this application if you are needing to 1. find your furry friend and 2. to look at really cute pictures of dogs and cats! </p>
+        <p> My friend and I wanted a puppy so bad and now with this website, I can do that so easily! Thanks devs! </p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+<!--- Footer --->
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Project #1</strong> || Developers: Madison Calvo, Reina Rivera, Tesh Patel, & Chase Harrington</a>
+      </p>
+    </div>
+  </footer>
+
+  </body>
+</html>
+
+
+<!-- <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +157,7 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <link rel="stylesheet" href="./index2.html">
-</head>
+</head> -->
 <!-- <body>
     <nav class="navbar is-primary">
         <div class="container">
@@ -35,7 +185,7 @@
     <script src="./script.js"></script>
     
 </body> -->
-<body>
+<!-- <body>
     <nav class="navbar is-info">
         <div class="navbar-brand">
             <a class="navbar-item is-size-3" href="index.html">
@@ -152,7 +302,7 @@
     <script src="script.js"></script>
 
 </body>
-</html>
+</html> -->
 
 <!---https://dog.ceo/api/breeds/image/random
 
