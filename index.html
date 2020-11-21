@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <link rel="stylesheet" href="./index2.html">
 </head>
-<body>
+<!-- <body>
     <nav class="navbar is-primary">
         <div class="container">
             <div class="navbar-brand">
@@ -34,6 +34,123 @@
     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="./script.js"></script>
     
+</body> -->
+<body>
+    <nav class="navbar is-info">
+        <div class="navbar-brand">
+            <a class="navbar-item is-size-3" href="index.html">
+                <i class="fas fa-paw"></i>Adopt-a-Pet
+            </a>
+            <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarExampleTransparentExample" class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item" href="index.html">
+                    Find a Pet
+                </a>
+                <a class="navbar-item" href="resources.html">
+                    Pet Resources
+                </a>
+            </div>
+        </div>
+
+    </nav>
+
+    <figure class="image is-3by1">
+        <img src="images/pets.jpg">
+    </figure>
+
+
+
+    <div class="columns top-margin">
+        <div class="column">
+
+        </div>
+        <div class="column">
+            <div class="field">
+                <label class="label">Zip Code</label>
+                <div class="control is-expanded">
+                    <input id="zipCode" class="input" type="text" placeholder="">
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Distance (miles)</label>
+                <div class="control">
+                    <div id="distance" class="select">
+                        <select>
+                            <option selected value="5">5</option>
+                            <option value="10">10</option>
+                            <option value="20">20</option>
+                            <option value="50">50</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="field">
+                <label class="label">Species</label>
+                <div class="control">
+                    <div id="species" class="select">
+                        <select>
+                            <option selected value="cat">Cat</option>
+                            <option value="dog">Dog</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="field is-grouped is-grouped-centered">
+                <div class="control">
+                    <button id="submit" class="button is-link">Submit</button>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="columns">
+            <div class="column">
+
+            </div>
+            <div class="column">
+
+            </div>
+            <div class="column">
+
+            </div>
+            <div class="column">
+
+            </div>
+        </div>
+    </div>
+
+    <div id="pet-results" class="container">
+    </div>
+
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>Pet Adoption</strong> by Jared Kong, Khangai Ganbayar, & Rachel Rohrbach. The source code is
+                licensed
+                <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="script.js"></script>
+
 </body>
 </html>
 
