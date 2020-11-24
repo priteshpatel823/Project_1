@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Adoption | Find my PETFriend!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+<!--- Nav bar --->
+<nav class="navbar is-transparent">
+    <div class="navbar-brand">
+        <p class="control">
+            <a class="navbar-item"></a>
+              <span class="icon">
+                <i class="fa fa-petfriend"></i>
+              </span>
+              <span>Find my PETFriend!</span>
+            </a>
+          </p>
+    </div>
+  
+    <div id="navbar transparent" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="https://versions.bulma.io/0.7.0/">
+          Home
+        </a>
+      </div>
+  
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="field is-grouped">
+            <p class="control">
+              <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet" data-social-target="https://bulma.io" target="_blank" href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=https://bulma.io&amp;via=jgthms">
+                <span class="icon">
+                  <i class="fa fa-twitter"></i>
+                </span>
+                <span>
+                  Twitter
+                </span>
+              </a>
+            </p>
+            <p class="control">
+              <a class="button" href="https://github.com/jgthms/bulma/releases/download/0.6.2/bulma-0.6.2.zip">
+                <span class="icon">
+                  <i class="fa fa-github"></i>
+                </span>
+                <span>Github</span>
+              </a>
+            </p>
+            <p class="control">
+                <a class="button is-primary" href="https://github.com/jgthms/bulma/releases/download/0.6.2/bulma-0.6.2.zip">
+                  <span class="icon">
+                    <i class="fa fa-paw"></i>
+                  </span>
+                  <span>Adopt-a-Pet</span>
+                </a>
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+<section class="section">
+    <div class="container">
+      <h1 class="title is-1">Planning to Adopt a Pet?</h1>
+      <h4 class="subtitle is-4">
+        Hi there! We've created a central app to help you adopt your new <strong>furry friend!</strong> To get started, scroll down to find photos of cute dogs and cats to ispire your adoption. Then click on the adoption page to find your pet a forever home.
+      </h4>
+    </div>
+  </section>
+
+  <figure class="image">
+    <img src="kidanddog.jpeg">
+</figure>
+
+<h3 class="title has-text-centered title is-3">Pets Available for Adoption Nearby</h3>
+<!--- Form for Adoption Page --->
+  <div class="columns top-margin">
+    <div class="column">
+
+    </div>
+    <div class="column">
+        <div class="field">
+            <label class="label">Zip Code</label>
+            <div class="control is-expanded">
+                <input id="zipCode" class="input" type="text" placeholder="">
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">Distance (miles)</label>
+            <div class="control">
+                <div id="distance" class="select">
+                    <select>
+                        <option selected value=""></option>
+                        <option value="5">5</option>
+                        <option value="10">10</option>
+                        <option value="20">20</option>
+                        <option value="50">50</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="field">
+            <label class="label">Species</label>
+            <div class="control">
+                <div id="species" class="select">
+                    <select>
+                        <option selected value=""></option>
+                        <option value="cat">Cat</option>
+                        <option value="dog">Dog</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="field is-grouped is-grouped-centered">
+            <div class="control">
+                <button id="submit" class="button is-primary">Submit</button>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+
+    </div>
+</div>
+
+<div class="container">
+    <div class="columns">
+        <div class="column">
+
+        </div>
+        <div class="column">
+
+        </div>
+        <div class="column">
+
+        </div>
+        <div class="column">
+
+        </div>
+    </div>
+</div>
+
+<div id="pet-results" class="container">
+</div>
+
+ <!--- Testimonial --->
+
+  <div class="tile is-ancestor">
+    <div class="tile is-4 is-vertical is-parent">
+      <div class="tile is-child box">
+        <p class="title">Testimonial One:</p>
+        <p> The best adoption page ever! I found my furry friend in minutes. Someone please give these developers a job in software development!</p>
+      </div>
+      <div class="tile is-child box">
+        <p class="title">Testimonial Two:</p>
+        <p>This application is the bomb dot com. In minutes, I was able to see photos of dogs and cats and then immedietly be taken to a adoption page. Bravo, developers!</p>
+      </div>
+    </div>
+    <div class="tile is-parent">
+      <div class="tile is-child box">
+        <p class="title">Testimonial Three:</p>
+        <p>Find my pet friend is super awesome. I highly reccomend this application if you are needing to 1. find your furry friend and 2. to look at really cute pictures of dogs and cats! </p>
+        <p> My friend and I wanted a puppy so bad and now with this website, I can do that so easily! Thanks devs! </p>
+      </div>
+    </div>
+  </div>
+
+
+
+<!--- Footer --->
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Project #1</strong> || Developers: Madison Calvo, Reina Rivera, Tesh Patel, & Chase Harrington</a>
+      </p>
+    </div>
+  </footer>
+
+  </body>
+</html>
+
+
+<!-- <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="./index2.html">
+</head> -->
+<!-- <body>
+    <nav class="navbar is-primary">
+        <div class="container">
+            <div class="navbar-brand">
+               <a class="navbar-item" href="#" style="font-weight:bold;">
+                   Find my Pet Friend!
+               </a>
+                   <span class="navbar-burger" data-target="navMenu">
+                       <span></span>
+                       <span></span>
+                   </span>
+              </div>
+              <div id="navMenu" class="navBar-menu">
+                  <div class="navbar-end">
+                      <a href="#" class="navbar-item">Home</a>
+                      <a href="#" class="navbar-item">Adoption</a>
+                      <a href="#" class="navbar-item">Photos</a>
+                  </div>
+              </div>
+        </div>
+       </nav>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" 
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+    
+</body> -->
+<!-- <body>
+    <nav class="navbar is-info">
+        <div class="navbar-brand">
+            <a class="navbar-item is-size-3" href="index.html">
+                <i class="fas fa-paw"></i>Adopt-a-Pet
+            </a>
+            <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarExampleTransparentExample" class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item" href="index.html">
+                    Find a Pet
+                </a>
+                <a class="navbar-item" href="resources.html">
+                    Pet Resources
+                </a>
+            </div>
+        </div>
+
+    </nav>
+
+    <figure class="image is-3by1">
+        <img src="images/pets.jpg">
+    </figure>
+
+
+
+    <div class="columns top-margin">
+        <div class="column">
+
+        </div>
+        <div class="column">
+            <div class="field">
+                <label class="label">Zip Code</label>
+                <div class="control is-expanded">
+                    <input id="zipCode" class="input" type="text" placeholder="">
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Distance (miles)</label>
+                <div class="control">
+                    <div id="distance" class="select">
+                        <select>
+                            <option selected value="5">5</option>
+                            <option value="10">10</option>
+                            <option value="20">20</option>
+                            <option value="50">50</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="field">
+                <label class="label">Species</label>
+                <div class="control">
+                    <div id="species" class="select">
+                        <select>
+                            <option selected value="cat">Cat</option>
+                            <option value="dog">Dog</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="field is-grouped is-grouped-centered">
+                <div class="control">
+                    <button id="submit" class="button is-link">Submit</button>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="columns">
+            <div class="column">
+
+            </div>
+            <div class="column">
+
+            </div>
+            <div class="column">
+
+            </div>
+            <div class="column">
+
+            </div>
+        </div>
+    </div>
+
+    <div id="pet-results" class="container">
+    </div>
+
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>Pet Adoption</strong> by Jared Kong, Khangai Ganbayar, & Rachel Rohrbach. The source code is
+                licensed
+                <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html> -->
+
+<!---https://dog.ceo/api/breeds/image/random
+
+    https://thecatapi.com/     
+    a8fb1e2f-471d-4f69-a15f-8b5f70c27a42
+ 
+    http://rescuegroups.org/
+    ERWX75Rx
+
+
+ --->
