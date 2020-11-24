@@ -3,41 +3,83 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Find my pet friend!</title>
+
+    <title>Adoption | Find my PETFriend!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
 <!--- Nav bar --->
- <nav class="navbar">
- <div class="container">
-     <div class="navbar-brand">
-        <a class="navbar-item" href="#" style="font-weight:bold;">
-            Find my Pet Friend!
+
+<nav class="navbar is-transparent">
+    <div class="navbar-brand">
+        <p class="control">
+            <a class="navbar-item"></a>
+              <span class="icon">
+                <i class="fa fa-petfriend"></i>
+              </span>
+              <span>Find my PETFriend!</span>
+            </a>
+          </p>
+    </div>
+  
+    <div id="navbar transparent" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="https://versions.bulma.io/0.7.0/">
+          Home
         </a>
-            <span class="navbar-burger" data-target="navMenu">
-                <span></span>
-                <span></span>
-            </span>
-       </div>
-       <div id="navMenu" class="navBar-menu">
-           <div class="navbar-end">
-               <a href="#" class="navbar-item">Home</a>
-               <a href="#" class="navbar-item">Adoption</a>
-               <a href="#" class="navbar-item">Photos</a>
-           </div>
-       </div>
- </div>
-</nav>
+      </div>
+  
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="field is-grouped">
+            <p class="control">
+              <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet" data-social-target="https://bulma.io" target="_blank" href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=https://bulma.io&amp;via=jgthms">
+                <span class="icon">
+                  <i class="fa fa-twitter"></i>
+                </span>
+                <span>
+                  Twitter
+                </span>
+              </a>
+            </p>
+            <p class="control">
+              <a class="button" href="https://github.com/jgthms/bulma/releases/download/0.6.2/bulma-0.6.2.zip">
+                <span class="icon">
+                  <i class="fa fa-github"></i>
+                </span>
+                <span>Github</span>
+              </a>
+            </p>
+            <p class="control">
+                <a class="button is-primary" href="https://github.com/jgthms/bulma/releases/download/0.6.2/bulma-0.6.2.zip">
+                  <span class="icon">
+                    <i class="fa fa-paw"></i>
+                  </span>
+                  <span>Adopt-a-Pet</span>
+                </a>
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
 
 <section class="section">
     <div class="container">
-      <h1 class="title">Home Page!</h1>
-      <h2 class="subtitle">
-        A central app to help you adopt your new <strong>furry friend!</strong> To get started, scroll down to find photos of cute dogs and cats to ispire your adoption. Then click on the adoption page to find your pet a forever home.
-      </h2>
+      <h1 class="title is-1">Planning to Adopt a Pet?</h1>
+      <h4 class="subtitle is-4">
+        Hi there! We've created a central app to help you adopt your new <strong>furry friend!</strong> To get started, scroll down to find photos of cute dogs and cats to ispire your adoption. Then click on the adoption page to find your pet a forever home.
+      </h4>
     </div>
   </section>
+
+  <figure class="image">
+    <img src="kidanddog.jpeg">
+</figure>
+
+<h3 class="title has-text-centered title is-3">Pets Available for Adoption Nearby</h3>
 
 <!--- Form for Adoption Page --->
   <div class="columns top-margin">
@@ -83,7 +125,8 @@
 
         <div class="field is-grouped is-grouped-centered">
             <div class="control">
-                <button id="submit" class="button is-link">Submit</button>
+
+                <button id="submit" class="button is-primary">Submit</button>
             </div>
         </div>
     </div>
@@ -133,7 +176,6 @@
       </div>
     </div>
   </div>
-
 
 
 
