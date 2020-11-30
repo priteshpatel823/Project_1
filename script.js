@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  $("#dog").on("click", function() {
+  /*$("#dog").on("click", function() {
     event.preventDefault();
     var queryURL = "https://dog.ceo/api/breeds/image/random"
 
@@ -38,7 +38,7 @@ $(document).ready(function() {
     var html = '<img src="' + data[0]["url"] + '">';
     document.getElementById("image").innerHTML = html;
   })
-});
+});*/
 
     $("#submit").on("click", function() {
       event.preventDefault();
