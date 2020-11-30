@@ -9,64 +9,32 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
   </head>
   <body>
 <!--- Nav bar --->
 
-<nav class="navbar is-transparent">
-    <div class="navbar-brand">
-        <p class="control">
-            <a class="navbar-item"></a>
-              <span class="icon">
-                <i class="fa fa-petfriend"></i>
-              </span>
-              <span>Find my PETFriend!</span>
-            </a>
-          </p>
-    </div>
-  
-    <div id="navbar transparent" class="navbar-menu">
-      <div class="navbar-start">
-        <a class="navbar-item" href="index.html">
-          Home
-        </a>
-      </div>
-  
-      <div class="navbar-end">
-        <div class="navbar-item">
-          <div class="field is-grouped">
-            <p class="control">
-              <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet" 
-              data-social-target="https://bulma.io" target="_blank" href="https://twitter.com/rescuegroupsorg?lang=en">
-                <span class="icon">
-                  <i class="fa fa-twitter"></i>
-                </span>
-                <span>
-                  Twitter
-                </span>
-              </a>
-            </p>
-            <p class="control">
-              <a class="button" href="https://github.com/priteshpatel823/Project_1">
-                <span class="icon">
-                  <i class="fa fa-github"></i>
-                </span>
-                <span>Github</span>
-              </a>
-            </p>
-            <p class="control">
-                <a class="button is-primary" href="#adoption_page">
-                  <span class="icon">
-                    <i class="fa fa-paw"></i>
-                  </span>
-                  <span>Adopt-a-Pet</span>
-                </a>
-              </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
+<div class="topnav" id="myTopnav">
+        
+  <a href="#home" class="active">
+      Find my PETfriend!</a>
+  <a href="#index.html">Home</a>
+  <a href="https://twitter.com/rescuegroupsorg?lang=en">
+    <span class="icon">
+      <i class="fa fa-twitter"></i>
+    </span>
+    Twitter</a>
+  <a href="https://github.com/priteshpatel823/Project_1">GitHub</a>
+  <a href="##adoption_page"> <span class="icon">
+    <i class="fa fa-petfriend"></i>
+  </span>Adoption Form</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<!-- Section -->
 
 <section class="section">
     <div class="container">
@@ -82,27 +50,6 @@
   <figure class="image">
     <img src="./images/kidanddog.jpeg">
 </figure>
-
-<!------ Tiles ------>
-<section class="section">
-  <div class="container">
-    <div class="tile is-parent">
-      <div class="tile is-child">
-        <p>Att: Dog lovers, look no further!</p>
-        <button class="button is-dark is-rounded" id="dog">Get Pic</button>
-        <img src="https://via.placeholder.com/150" alt="Image">
-      </div>
-
-      <div class="tile is-child is-3">
-        <p>Need a little cat-vincing? Click here!</p>
-        <button class="button is-dark is-rounded" id="Cat">Get Pic</button>
-        <img src="https://via.placeholder.com/150" alt="Image">
-      </div>
-    </div>
-  </div>
-</section>
-
-<h3 class="title has-text-centered title is-3">Pets Available for Adoption Nearby</h3>
 
 <!--- Form for Adoption Page --->
   <div class="columns top-margin" id="adoption_page">
